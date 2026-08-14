@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
     const base = `${url.origin}${url.pathname}?mint=${mint}&sym=${encodeURIComponent(symbol)}`;
     return json(res, 200, {
       type: "action",
-      icon: "https://YOUR_DOMAIN/tailstream-icon.png",
+      icon: "https://raw.githubusercontent.com/jamesbourke52-a11y/tailstream-buy/main/tailstream-icon.png",
       title: `Buy $${symbol}`,
       description: `Copy the trade — buy $${symbol} from your own wallet. You approve every trade; Tailstream never holds your funds. Not financial advice.`,
       label: `Buy $${symbol}`,
